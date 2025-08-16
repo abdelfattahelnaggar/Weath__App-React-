@@ -6,6 +6,8 @@
 
 **A beautiful and responsive weather application built with React and Vite**
 
+### 🌐 [**Live Demo**](https://weath-app-react.vercel.app/) ← Try it now!
+
 [![React](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.0.4-646CFF.svg)](https://vitejs.dev/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.7-7952B3.svg)](https://getbootstrap.com/)
