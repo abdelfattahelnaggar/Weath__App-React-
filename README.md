@@ -62,6 +62,12 @@
    
    Get your free API key from [WeatherAPI.com](https://www.weatherapi.com/)
 
+   **🚀 For Production Deployment:**
+   - **Vercel:** Add environment variables in project settings
+   - **Netlify:** Add in site settings → Environment variables  
+   - **GitHub Pages:** Use GitHub Secrets in Actions
+   - **Railway/Render:** Add in dashboard environment section
+
 4. **Start the development server**
    ```bash
    npm run dev
@@ -86,6 +92,51 @@ npm run preview
 # Run ESLint
 npm run lint
 ```
+
+## 🚀 Deployment Guide
+
+### **Step 1: Build Your Project**
+```bash
+npm run build
+```
+
+### **Step 2: Deploy to Your Platform**
+
+#### **Vercel (Recommended)** ⚡
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+
+# Add environment variable
+vercel env add VITE_WEATHER_API_KEY
+```
+
+#### **Netlify** 🌐
+```bash
+# Install Netlify CLI  
+npm i -g netlify-cli
+
+# Deploy
+netlify deploy --prod --dir=dist
+
+# Add environment variable in Netlify dashboard
+```
+
+#### **GitHub Pages** 📄
+1. Push code to GitHub
+2. Add `WEATHER_API_KEY` to repository secrets
+3. Enable GitHub Actions workflow
+4. Your app deploys automatically!
+
+### **Step 3: Configure Environment Variables**
+In your deployment platform dashboard, add:
+- **Variable Name:** `VITE_WEATHER_API_KEY`
+- **Variable Value:** Your WeatherAPI.com API key
+
+⚠️ **Important:** Always add environment variables in your deployment platform, never commit `.env` files!
 
 ## 🏗️ Project Structure
 
@@ -170,9 +221,6 @@ This app uses the [WeatherAPI.com](https://www.weatherapi.com/) service:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -183,7 +231,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-**Abdelfattah** - Route Frontend Diploma Student
+**Abdelfattah A. Elnaggar** - Frontend Developer
+
+📱 **Mobile:** +201101791968  
+💼 **LinkedIn:** [@abdelfattah-a-elnaggar](https://www.linkedin.com/in/abdelfattah-a-elnaggar-390413375/)  
+🎓 **Program:** Route Frontend Diploma Student
 
 Project Link: [https://github.com/your-username/weather-app](https://github.com/your-username/weather-app)
 
