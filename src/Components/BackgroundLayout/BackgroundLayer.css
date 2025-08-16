@@ -1,4 +1,4 @@
-.background__layer {
+  .background__layer {
     color: #E8E6E3 !important;
     background: linear-gradient(135deg, #74b9ff 0%, #0984e3 50%, #6c5ce7 100%);
     position: relative;
@@ -9,6 +9,21 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  /* Sticky Footer Styles */
+  .footer {
+    background: rgba(182, 176, 176, 0.05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.01);
+    z-index: 10;
+  }
+
+  .footer p {
+    color: #E8E6E3;
+    font-size: 0.9rem;
+    opacity: 0.8;
   }
 
   .clouds-container {

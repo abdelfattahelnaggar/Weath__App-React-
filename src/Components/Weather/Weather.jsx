@@ -72,11 +72,6 @@ export default function Weather() {
       <div className="row justify-content-center g-3">
         <WeatherCards data={data} />
       </div>
-      <footer className="mt-5 mb-0">
-        <p className="text-center">
-          All rights reserved &copy; {new Date().getFullYear()}. Created by Abdelfattah Elnaggar <span className="text-danger">❤</span>
-        </p>
-      </footer>
     </>
   );
 }
