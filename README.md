@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Weather App Screenshot](./src/assets/image.png)
+![Weather App Screenshot](./public/image.png)
 
 **A beautiful and responsive weather application built with React and Vite**
 
