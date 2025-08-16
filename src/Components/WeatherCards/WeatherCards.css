@@ -1,6 +1,15 @@
 .card {
   background-color: #094874 !important;
   color: #d6e3ee !important;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.card:hover {
+  translate: 0 -3px;
+  scale: 1.01;
 }
 .card h6,
 .condition-text, .statistic-name {

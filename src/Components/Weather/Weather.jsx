@@ -54,7 +54,8 @@ export default function Weather() {
   }
   return (
     <>
-      <form onSubmit={handleSearch} className="input-group mb-3 py-2 w-50">
+    <div className="col-12 col-lg-8 col-md-10">
+      <form onSubmit={handleSearch} className="input-group mb-3 py-2 w-md-100 w-lg-50">
         <input
           type="text"
           className="form-control bg-body-secondary py-2"
@@ -66,10 +67,16 @@ export default function Weather() {
           Search
         </button>
       </form>
+      </div>
       <h2 className="text-center mb-4 ">Weather in {data.location.name}</h2>
-      <div className="row g-3">
+      <div className="row justify-content-center g-3">
         <WeatherCards data={data} />
       </div>
+      <footer className="mt-5 mb-0">
+        <p className="text-center">
+          All rights reserved &copy; {new Date().getFullYear()}. Created by Abdelfattah Elnaggar <span className="text-danger">❤</span>
+        </p>
+      </footer>
     </>
   );
 }

@@ -12,7 +12,7 @@ export default function WeatherCards({ data }) {
   return (
     <>
       {forecastDays.map((day, index) => (
-        <div key={day.date} className="col-md-4">
+        <div key={day.date} className="col-md-6 col-lg-4">
           <div className="card py-3 border-1">
             <h4 className="fs-5">{dayLabels[index]}</h4>
             <h6 className="fw-normal mb-0">
