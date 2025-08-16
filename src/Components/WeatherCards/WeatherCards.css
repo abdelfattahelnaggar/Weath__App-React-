@@ -1,0 +1,23 @@
+.card {
+  background-color: #094874 !important;
+  color: #d6e3ee !important;
+}
+.card h6,
+.condition-text, .statistic-name {
+  color: #b0a99f !important;
+}
+.condition-icon {
+  animation: upAndDown 2s ease-in-out infinite alternate;
+  -webkit-animation: upAndDown 2.5s ease-in-out infinite alternate;
+}
+@keyframes upAndDown {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 0 -12px;
+  }
+  100% {
+    translate: 0 0;
+  }
+}

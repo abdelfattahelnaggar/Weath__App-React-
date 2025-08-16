@@ -1,0 +1,22 @@
+.btn-search {
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.btn-search:hover {
+  scale: 1.05;
+}
+
+.input-group:focus-within .btn-search {
+  z-index: 100;
+}
+  
+.form-control:focus {
+  z-index: 100;
+}
+.bg-semi-primary {
+  background-color: #064b7f !important;
+}
+.bg-semi-primary::placeholder {
+  color: #f1f1f1 !important;
+  opacity: 0.4 !important;
+}
