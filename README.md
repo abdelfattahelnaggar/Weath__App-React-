@@ -1,12 +1,195 @@
-# React + Vite
+# 🌤️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![Weather App Screenshot](./src/assets/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**A beautiful and responsive weather application built with React and Vite**
 
-## Expanding the ESLint configuration
+[![React](https://img.shields.io/badge/React-19.1.0-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.0.4-646CFF.svg)](https://vitejs.dev/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.7-7952B3.svg)](https://getbootstrap.com/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</div>
+
+## ✨ Features
+
+- 🌍 **Global Weather Search** - Get weather information for any city worldwide
+- 📊 **3-Day Forecast** - View current weather and 3-day forecast
+- 🎨 **Beautiful UI** - Modern, responsive design with Bootstrap
+- ⚡ **Fast Performance** - Built with Vite for lightning-fast development and builds
+- 🔍 **Smart Search** - Easy-to-use city search with error handling
+- 📱 **Mobile Responsive** - Looks great on all devices
+- 🌈 **Dynamic Backgrounds** - Beautiful background layouts that enhance the experience
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework:** React 19.1.0
+- **Build Tool:** Vite 7.0.4
+- **Styling:** Bootstrap 5.3.7 + Bootstrap Icons
+- **HTTP Client:** Axios
+- **Date/Time:** Luxon
+- **Alerts:** SweetAlert2
+- **Weather API:** WeatherAPI.com
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/weather-app.git
+   cd weather-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_WEATHER_API_KEY=your_weatherapi_key_here
+   ```
+   
+   Get your free API key from [WeatherAPI.com](https://www.weatherapi.com/)
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   
+   Navigate to `http://localhost:5173` to see the app running!
+
+## 📋 Available Scripts
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
+
+# Run ESLint
+npm run lint
+```
+
+## 🏗️ Project Structure
+
+```
+weather-app/
+├── public/                 # Static assets
+├── src/
+│   ├── Components/         # React components
+│   │   ├── BackgroundLayout/
+│   │   │   ├── BackgroundLayer.jsx
+│   │   │   └── BackgroundLayer.css
+│   │   ├── Weather/
+│   │   │   ├── Weather.jsx
+│   │   │   └── Weather.css
+│   │   └── WeatherCards/
+│   │       ├── WeatherCards.jsx
+│   │       └── WeatherCards.css
+│   ├── assets/            # Images and static files
+│   ├── App.jsx           # Main App component
+│   ├── main.jsx          # App entry point
+│   └── index.css         # Global styles
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## 🎯 How It Works
+
+1. **Search for a City**: Enter any city name in the search box
+2. **View Current Weather**: See current temperature, conditions, and location
+3. **Check Forecast**: View the next 3 days of weather forecast
+4. **Error Handling**: Get friendly error messages for invalid cities or network issues
+
+## 🌟 Key Components
+
+### Weather Component
+- Handles API calls to WeatherAPI
+- Manages search functionality
+- Displays current weather information
+
+### WeatherCards Component
+- Shows weather forecast cards
+- Displays temperature, conditions, and dates
+- Responsive card layout
+
+### BackgroundLayer Component
+- Provides beautiful background layouts
+- Enhances visual appeal
+
+## 🔧 Configuration
+
+### Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `VITE_WEATHER_API_KEY` | Your WeatherAPI.com API key | Yes |
+
+### API Integration
+
+This app uses the [WeatherAPI.com](https://www.weatherapi.com/) service:
+- **Endpoint**: `https://api.weatherapi.com/v1/forecast.json`
+- **Features**: Current weather + 3-day forecast
+- **Rate Limit**: Free tier allows 1 million calls per month
+
+## 🎨 Customization
+
+### Styling
+- CSS files are located in each component folder
+- Global styles in `src/index.css`
+- Bootstrap classes used throughout for responsiveness
+
+### Adding Features
+- Extend forecast days in the API call
+- Add more weather details (humidity, wind speed, etc.)
+- Implement geolocation for current location weather
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [WeatherAPI.com](https://www.weatherapi.com/) for providing the weather data
+- [React](https://reactjs.org/) for the awesome framework
+- [Vite](https://vitejs.dev/) for the blazing fast build tool
+- [Bootstrap](https://getbootstrap.com/) for the beautiful UI components
+
+## 📞 Contact
+
+**Abdelfattah** - Route Frontend Diploma Student
+
+Project Link: [https://github.com/your-username/weather-app](https://github.com/your-username/weather-app)
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Abdelfattah</p>
+  <p>Part of Route Frontend Diploma Program</p>
+</div>
