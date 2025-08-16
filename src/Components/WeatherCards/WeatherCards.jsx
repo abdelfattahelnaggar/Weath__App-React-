@@ -51,7 +51,7 @@ export default function WeatherCards({ data }) {
               </div>
               <div className="item d-flex flex-column">
                 <i className="bi bi-wind fs-5"></i>
-                <small className="fw-normal statistic-name">Humidity</small>
+                <small className="fw-normal statistic-name">Wind Speed</small>
                 <span className="fw-bold">
                   {index === 0
                     ? `${data.current.wind_mph} mph`
